@@ -61,6 +61,7 @@ sub stripZeroes {
             }
         }
         $thisEntry->{'intervalRead'}->{'removedReads'} = $self->arrayToRanges(\@excludedRecords);
+        $thisEntry->{'intervalRead'}->{'intervalReads'} = \@newInterval;
 
         push(@newStructure, $thisEntry);
     }
